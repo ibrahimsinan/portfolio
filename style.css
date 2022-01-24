@@ -1,0 +1,203 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.blurb h2 {
+    color: black;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p {
+    font-weight: 200;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.lead {
+    font-weight: 300 !important;
+}
+
+h1 {
+    font-size: 3em !important;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+hr {
+    width: 20%;
+    border-top: 0.5px solid rgb(150, 150, 150);
+    /* border-top: none;
+    border-bottom: 10px dotted rgb(216, 206, 206);
+    margin-top: 0;
+    margin-bottom: 20px; */
+}
+
+img {
+    border-radius: 20px;
+}
+
+footer {
+    background: rgb(216, 214, 214);
+    padding-bottom: 10px;
+}
+
+li strong {
+    text-decoration: underline;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+#mainNavbar {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+#heading-group span {
+    color: #EA1C2C;
+}
+
+#heading-group h1 {
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+#heading-group h3 {
+    margin-top: 45px;
+    font-weight: 200;
+}
+
+#woman-protyping-header {
+    width: 600px;
+}
+
+.header {
+    margin-top: 20px !important;
+}
+
+.navbar.scrolled {
+    background: rgb(248, 249, 250);
+    transition: background 600ms;
+    box-shadow: 0px 1px 10px #999;
+}
+
+.section-1 {
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+button {
+    color: black;
+}
+
+.highlight {
+    /* padding: 0 10px; */
+    color: #EA1C2C;
+}
+
+.small-image {
+    width: 80px;
+}
+
+.admission-list {
+    list-style: none;
+    text-align: left;
+}
+
+/* toggle image aka hamburger img */
+.navbar-light .navbar-toggler-icon {
+    background-image: url(./imgs/toggle-logo.png);
+}
+
+/* social media icons */
+.social-media-img {
+    width: 45px;
+}
+
+#social-media-hr {
+    width: 288px;
+}
+
+#footer-hr {
+    width: 100%;
+}
+
+
+.bg {
+    /* The image used */
+    background-image: url("./imgs/background.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 54px;
+}
+
+@media screen and (max-width: 600px) {
+    .section-1 {
+        padding-top: 30px;
+    }
+
+
+}
+
+/*To make our text scalable we must add a media query*/
+
+@media (max-width: 1200px) {
+    .navbar {
+        background: rgb(248, 249, 250);
+    }
+
+    #heading-group h1 {
+        font-weight: 300;
+        font-size: 2.5rem;
+    }
+
+    #woman-coding {
+        width: 86%;
+    }
+
+    #information-img {
+        width: 86%;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    #woman-protyping-header {
+        width: 99%;
+        text-align: center;
+    }
+}

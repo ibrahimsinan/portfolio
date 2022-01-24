@@ -1,17 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- SEO Meta tags -->
+    <meta name="description" content="Front end developer portfolio website, portfolio projects">
+    <meta name="keywords"
+        content="coding course, web development course, HTML, CSS, learn HTML, learn CSS, front-end development course, web development, altcademy">
+    <meta name="author" content="IS">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title> Web Project Portfolio</title>
+    <link rel="shortcut icon" href="./imgs/#.png">
+
+    <!-- Social media icon library -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
-    <h1>Hello Portfolio</h1>
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-lg py-0 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Ibrahim Sinan
+                <!-- <img src="./imgs/ucode-logo-small.png" width="180" alt="small ucode logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navlinks"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <!--aria-label is for accessability-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navlinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#course" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#learning" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#admission" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h2>Yeay I am so happy</h2>
+
+
+
+
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+    <script>
+        // Scroll to top on refresh
+        $(document).ready(function () {
+            $(this).scrollTop(0);
+        });
+
+        // Collapse navbar in mobile view on click
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        // scroll to navbar link sections
+        window.scrollTo({
+            // top: 900,
+            behavior: 'smooth'
+        });
+
+        function copyEvent(id) {
+            var str = document.getElementById(id);
+            window.getSelection().selectAllChildren(str);
+            document.execCommand("Copy")
+        }
+
+        function messageFunction() {
+            var x = document.getElementById("myDIV");
+
+            if (x.innerHTML === "") {
+                x.innerHTML = "Copied!";
+            } else {
+                x.innerHTML = "Thanks, already copied.";
+            }
+        }
+    </script>
 </body>
 
 </html>
