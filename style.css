@@ -1,7 +1,7 @@
 /* hero background image */
 .bgimage {
     height: 100vh;
-    background: url('images/heroImage.jpeg');
+    background: url('images/heroImage3.png');
     background-size: cover;
     position: relative;
 }
@@ -22,4 +22,22 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid white;
 }
