@@ -1,7 +1,7 @@
 /* hero background image */
 .bgimage {
     height: 100vh;
-    background: url('images/heroImage3.png');
+    background: url('images/heroImage.png');
     background-size: cover;
     position: relative;
 }
@@ -40,4 +40,50 @@
 
 .nav-link:hover {
     border-bottom: 1px solid white;
+}
+
+/* MAP STYLES */
+#embeddedmap-canvas img.text-marker {
+    max-width: none !important;
+    background: none !important;
+}
+
+img {
+    max-width: none
+}
+
+/* FOOTER */
+/* social media icons styling */
+.social-icons {
+    font-size: 66px;
+    cursor: pointer;
+}
+
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
+    color: #df1ea5;
+}
+
+.fab {
+    color: rgb(44, 112, 244);
+}
+
+/* footer styling */
+#footer {
+    background-color: #131212;
+    text-align: center;
+}
+
+
+/* spacing on all sections */
+#about,
+#portfolio,
+#contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+button.navbar-toggler.collapsed {
+    color: white !important;
 }
